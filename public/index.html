@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mini Social Media</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>MiniSocial</h1>
+
+    <div>
+        Logged in as:
+        <select id="currentUser"></select>
+    </div>
+</header>
+
+<main>
+
+    <!-- Profile -->
+    <section class="profile-card">
+
+        <div class="avatar" id="profileAvatar">
+            👤
+        </div>
+
+        <div>
+            <h2 id="profileName">Loading...</h2>
+
+            <p id="profileBio">
+                Loading profile...
+            </p>
+
+            <p>
+                Followers:
+                <strong id="followersCount">0</strong>
+                |
+                Following:
+                <strong id="followingCount">0</strong>
+            </p>
+        </div>
+
+    </section>
+
+
+    <!-- Create Post -->
+    <section class="create-post">
+
+        <h2>Create Post</h2>
+
+        <textarea
+            id="postContent"
+            placeholder="What's on your mind?"
+        ></textarea>
+
+        <button onclick="createPost()">
+            Post
+        </button>
+
+    </section>
+
+
+    <!-- Users -->
+    <section>
+
+        <h2>Discover People</h2>
+
+        <div id="usersList"></div>
+
+    </section>
+
+
+    <!-- Feed -->
+    <section>
+
+        <h2>News Feed</h2>
+
+        <div id="feed"></div>
+
+    </section>
+
+</main>
+
+<script src="app.js"></script>
+
+</body>
+
+</html>
